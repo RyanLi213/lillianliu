@@ -2,7 +2,7 @@
   "name": "birthday_webpage",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ryanLi213.github.io/lillianliu",
+  "homepage": "https://ryanli213.github.io/lillianliu",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
