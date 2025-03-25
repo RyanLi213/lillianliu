@@ -78,7 +78,7 @@
                                 </el-card>
                             </el-timeline-item>
 
-                            <el-timeline-item timestamp="U mean so much to me <3, I'm so grateful that you ur in my life :)" placement="top">
+                            <el-timeline-item timestamp="U mean so much to me <3, I'm so grateful that ur in my life :)" placement="top">
                                 <el-card>
                                     <el-image :src="img6" @load="onImgLoad"></el-image>
                                 </el-card>
