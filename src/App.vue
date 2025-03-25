@@ -4,7 +4,7 @@
             <vue-page-transition name="fade">
                 <router-view class="view"></router-view>
             </vue-page-transition>
-            <el-footer>🤍 Happy Birthday 🤍</el-footer>
+            <el-footer>🤍🤍🤍 Happy Birthday you beautiful girl🤍🤍🤍</el-footer>
         </el-container>
     </div>
 </template>
@@ -30,9 +30,9 @@
         height: 100vh;
     }
 
-    /* Global footer */
+    /* Global footer #6cc7eb */
     .el-footer {
-        background-color: #dd6161;
+        background-color: #73d5ff;
         color: #F5F7FA;
         text-align: center;
         line-height: 60px;
@@ -57,10 +57,10 @@
     }
 
     .el-loading-spinner .el-loading-text {
-        color : #dd6161 !important;
+        color : #618add !important;
     }
 
     .el-loading-spinner .path{
-        stroke : #dd6161 !important;
+        stroke : #618add !important;
     }
 </style>

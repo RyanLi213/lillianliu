@@ -8,7 +8,7 @@
                            icon="el-icon-d-arrow-left"></el-button>
             </el-col>
             <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
-                <h1 style="margin-left: 50px">Messages</h1>
+                <h1 style="margin-left: 50px">Pictures</h1>
             </el-col>
         </el-row>
 
@@ -29,7 +29,7 @@
                         <el-timeline class="messages_timeline"
                                      v-show="showTimeline">
 
-                            <el-timeline-item timestamp="Say something here ..." placement="top">
+                            <el-timeline-item timestamp="Naomi's House!! 😎😎 " placement="top">
                                 <el-card>
                                     <el-image :src="img1" @load="onImgLoad"></el-image>
                                 </el-card>
@@ -37,17 +37,17 @@
 
                             <el-timeline-item>
                                 <el-card>
-                                    <h3>Say something here ...</h3>
+                                    <h3>First Mukbangg!! ᵒᶠ ᵐᵃⁿʸ 😊</h3>
                                 </el-card>
                             </el-timeline-item>
 
-                            <el-timeline-item timestamp="Say something here ..." placement="top">
+                            <el-timeline-item timestamp="First Mukbang, who is this hottie??🥵🥵" placement="top">
                                 <el-card>
                                     <el-image :src="img2" @load="onImgLoad"></el-image>
                                 </el-card>
                             </el-timeline-item>
 
-                            <el-timeline-item timestamp="Say something here ..." placement="top">
+                            <el-timeline-item timestamp="DAMNNN she's gorgeous😚😚" placement="top">
                                 <el-card>
                                     <el-image :src="img3" @load="onImgLoad"></el-image>
                                 </el-card>
@@ -55,30 +55,30 @@
 
                             <el-timeline-item placement="top">
                                 <el-card>
-                                    <h3>Say something here ...</h3>
+                                    <h3>SHE SOO BADDDD😳😳</h3>
                                 </el-card>
                             </el-timeline-item>
 
                             <el-timeline-item>
                                 <el-card>
                                     <el-image :src="img4" @load="onImgLoad"></el-image>
-                                    <h3>Say something here ...</h3>
+                                    <h3></h3>
                                 </el-card>
                             </el-timeline-item>
 
-                            <el-timeline-item timestamp="Say something here ..." placement="top">
+                            <el-timeline-item timestamp="" placement="top">
                                 <el-card>
-                                    <h3>Say something here ...</h3>
+                                    <h3>MY BEAUTIFUL MODEL 😻😻</h3>
                                 </el-card>
                             </el-timeline-item>
 
-                            <el-timeline-item timestamp="Say something here ..." placement="top">
+                            <el-timeline-item timestamp="" placement="top">
                                 <el-card>
                                     <el-image :src="img5" @load="onImgLoad"></el-image>
                                 </el-card>
                             </el-timeline-item>
 
-                            <el-timeline-item timestamp="Love, YourName." placement="top">
+                            <el-timeline-item timestamp="U mean so much to me <3, I'm so grateful that you ur in my life :)" placement="top">
                                 <el-card>
                                     <el-image :src="img6" @load="onImgLoad"></el-image>
                                 </el-card>
@@ -105,12 +105,12 @@
     import 'vue-loading-overlay/dist/vue-loading.css';
     // Images
     // TODO : Put your images in /src/assets, and import them accordingly.
-    import img1 from '../assets/just_grey0.jpg'
-    import img2 from '../assets/just_grey1.jpg'
-    import img3 from '../assets/just_grey2.jpg'
-    import img4 from '../assets/just_grey3.jpg'
-    import img5 from '../assets/just_grey4.jpg'
-    import img6 from '../assets/just_grey5.jpg'
+    import img1 from '../assets/lilian23.webp'
+    import img2 from '../assets/lilian1.jpg'
+    import img3 from '../assets/lils.gif'
+    import img4 from '../assets/lillian5.jpg'
+    import img5 from '../assets/lillian6.jpg'
+    import img6 from '../assets/lillian2.jpg'
 
     export default {
         name: "Messages",
@@ -131,7 +131,7 @@
                 totalImages : 6,
                 // Loader
                 loaderLoading: true,
-                loaderColor: "#dd6161",
+                loaderColor: "#409eff",
                 loaderOpacity: 1,
                 loaderStyle: "dots",
                 loaderHeight: 60,

@@ -1,39 +1,100 @@
-$particleSize: 20vmin;
-$animationDuration: 6s;
-$amount: 16;
+.fish-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
 
-.home span {
-  width: $particleSize;
-  height: $particleSize;
-  border-radius: $particleSize;
-  backface-visibility: hidden;
+.fish {
   position: absolute;
-  animation-name: move;
-  animation-duration: $animationDuration;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  $colors: (
-          #E4B3A9,
-          #e4a4a5,
-          #FFACAC
-  );
-  @for $i from 1 through $amount {
-    &:nth-child(#{$i}) {
-      color: nth($colors, random(length($colors)));
-      top: random(100) * 1%;
-      left: random(100) * 1%;
-      animation-duration: (random($animationDuration * 10) / 10) * 1s + 10s;
-      animation-delay: random(($animationDuration + 10s) * 10) / 10 * -1s;
-      transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;
-      $blurRadius: (random() + 0.5) * $particleSize * 0.5;
-      $x: if(random() > 0.5, -1, 1);
-      box-shadow: ($particleSize * 2 * $x) 0 $blurRadius currentColor;
-    }
+  width: 60px;
+  height: 36px;
+  background: yellow;
+  border-radius: 50% 50% 40% 40%;
+  opacity: 0.8;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+// Stripes
+.fish::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 100%;
+  left: 20%;
+  background: rgba(0, 0, 255, 0.3);
+  border-radius: 50%;
+  box-shadow: 16px 0 rgba(0, 0, 255, 0.3), 32px 0 rgba(0, 0, 255, 0.3);
+}
+
+// Tail
+.fish::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: orange;
+  top: 50%;
+  clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+  border-radius: 30%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+// Tail side flip
+.swim-right::after {
+  right: -15px;
+}
+
+.swim-left::after {
+  left: -15px;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.swim-left {
+  animation: swim-right linear infinite;
+}
+
+.swim-right {
+  animation: swim-left linear infinite;
+}
+@keyframes swim-right {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(120vw);
   }
 }
 
-@keyframes move {
+@keyframes swim-left {
+  0% {
+    transform: translateX(100vw);
+  }
   100% {
-    transform: translate3d(0, 0, 1px) rotate(360deg);
+    transform: translateX(-120vw);
+  }
+}
+.fish-1 { top: 5%; }
+.fish-2 { top: 15%; }
+.fish-3 { top: 25%; }
+.fish-4 { top: 35%; }
+.fish-5 { top: 45%; }
+.fish-6 { top: 55%; }
+.fish-7 { top: 65%; }
+.fish-8 { top: 75%; }
+.fish-9 { top: 85%; }
+.fish-10 { top: 90%; }
+
+// Positioning + animation timing for each fish
+@for $i from 1 through 10 {
+  .fish-#{$i} {
+    top: #{random(90)}%;
+    animation-duration: #{random(15) + 15}s;
+    animation-delay: -#{random(10)}s;
   }
 }

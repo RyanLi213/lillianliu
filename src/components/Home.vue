@@ -30,9 +30,9 @@
                 <el-row type="flex" class="button_row" justify="center">
                     <el-col :xs="16" :sm="16" :md="12" :lg="6" :xl="6">
                         <transition name="slide-fade">
-                            <el-button @click="goMessages()" class="home_button" plain type="danger"
+                            <el-button @click="goMessages()" class="home_button" plain type="primary"
                                        icon="el-icon-ice-cream-round" v-if="showButtons">
-                                Messages
+                                Pictures 🤍
                             </el-button>
                         </transition>
                     </el-col>
@@ -42,9 +42,9 @@
                 <el-row type="flex" class="button_row" justify="center">
                     <el-col :xs="16" :sm="16" :md="12" :lg="6" :xl="6">
                         <transition name="slide-fade">
-                            <el-button @click="goVideo()" class="home_button" plain type="danger"
+                            <el-button @click="goVideo()" class="home_button" plain type="primary"
                                        icon="el-icon-sugar" v-if="showButtons">
-                                Video
+                                Songs about you 🤍
                             </el-button>
                         </transition>
                     </el-col>
@@ -54,9 +54,9 @@
                 <el-row type="flex" class="button_row" justify="center">
                     <el-col :xs="16" :sm="16" :md="12" :lg="6" :xl="6">
                         <transition name="slide-fade">
-                            <el-button @click="goStoriesBehind()" class="home_button" plain type="danger"
+                            <el-button @click="goStoriesBehind()" class="home_button" plain type="primary"
                                        icon="el-icon-cold-drink" v-if="showButtons">
-                                Stories Behind
+                                Text Messages 🤍
                             </el-button>
                         </transition>
                     </el-col>
@@ -65,6 +65,24 @@
             </el-main>
 
         </el-container>
+    <template>
+        <div class="home">
+            <div class="fish-wrapper">
+                <div class="fish swim-left fish-1"></div>
+                <div class="fish swim-right fish-2"></div>
+                <div class="fish swim-left fish-3"></div>
+                <div class="fish swim-right fish-4"></div>
+                <div class="fish swim-left fish-5"></div>
+                <div class="fish swim-right fish-6"></div>
+                <div class="fish swim-left fish-7"></div>
+                <div class="fish swim-right fish-8"></div>
+                <div class="fish swim-left fish-9"></div>
+                <div class="fish swim-right fish-10"></div>
+            </div>
+        </div>
+        </template>
+
+
 
         <!-- For background effect -->
         <span></span>
@@ -89,6 +107,7 @@
         <span></span>
 
     </div>
+
 </template>
 
 <script>
@@ -129,7 +148,7 @@
 
     .home_container {
         height: 100vh;
-        background: #fde2e2;
+        background: #2142e4;
         position: relative;
     }
 
@@ -142,14 +161,20 @@
     }
 
     .button_row {
-        height: 12vh;
+
+    height: 18vh;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // gap: 0;
     }
+    
 
     .home_button {
         width: 100%;
         height: 60%;
         font-size: 20px;
-        font-weight: bold;
+      font-weight: bold;
         border-radius: 20px;
     }
 
@@ -160,3 +185,5 @@
         width: 100vw;
     }
 </style>
+
+

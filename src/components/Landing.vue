@@ -12,11 +12,11 @@
         data() {
             // TODO : Change these messages to your own words ...
             let landingMessages = [
-                "This is more than a website...",
-                "It's about you and your birthday...",
-                "About celebrations and wishes...",
-                "Are you ready for the experience...?",
-                "Welcome to YourDomain.com"
+                "Hey Princess <3",
+                "It's Your Birthday Today :)",
+                "I hope the day shines as bright as you <3",
+                "I was scheming a little...",
+                "And made this for you <3"
             ];
             return {
                 message: "",
@@ -56,7 +56,15 @@
     .landing {
         line-height: 80vh;
         font-size: 3vw;
-    }
+        text-align: center;
+        background-color: #7fe5ff; /* dark navy blue background */
+        color: #fffbe6;            /* soft yellow-white font */
+        height: 100vh;             /* make it fill the screen */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
 
     .landing_text {
         vertical-align: baseline;
