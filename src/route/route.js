@@ -9,6 +9,7 @@ import StoriesBehind from '../components/StoriesBehind'
 Vue.use(Router);
 
 export default new Router({
+    mode: 'hash', 
     routes: [
         {path: '/', name: 'LandingPage', component: Landing},
         {path: '/home', name:'HomePage', component: Home},
